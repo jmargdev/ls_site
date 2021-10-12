@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb://localhost:27017/?readPreference=primary&appname=mongodb-vscode%200.6.12&ssl=false",
-  "jwtSecret": "h3110d4rkN355my01Dfr13nd"
+  "jwtSecret": "h3110d4rkN355my01Dfr13nd",
+  "githubClientId": "8723d55fe179c5b8708a",
+  "githubSecret": "f1e7bf9ac0d176557aa4bf9e2e12115010a7479f"
 }
