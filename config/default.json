@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb://localhost:27017/?readPreference=primary&appname=mongodb-vscode%200.6.12&ssl=false"
+  "mongoURI": "mongodb://localhost:27017/?readPreference=primary&appname=mongodb-vscode%200.6.12&ssl=false",
+  "jwtSecret": "h3110d4rkN355my01Dfr13nd"
 }
