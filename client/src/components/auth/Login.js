@@ -31,6 +31,7 @@ const Login = () => {
             name='email'
             value={email}
             onChange={e => onChange(e)}
+            autoComplete='username'
             required
           />
         </div>
@@ -42,6 +43,7 @@ const Login = () => {
             minLength='6'
             value={password}
             onChange={e => onChange(e)}
+            autoComplete='new-password'
           />
         </div>
         <input type='submit' className='btn btn-primary' value='Login' />
