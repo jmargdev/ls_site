@@ -1,5 +1,4 @@
 import uuid from 'uuid';
-// eslint-disable-next-line no-unused-vars
 import { SET_ALERT, REMOVE_ALERT } from './types';
 
 export const setAlert = (msg, alertType) => dispatch => {
