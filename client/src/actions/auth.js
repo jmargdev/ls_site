@@ -63,7 +63,7 @@ export const register =
     }
   };
 
-// Register User
+// Login User
 export const login =
   ({ name, email, password }) =>
   async dispatch => {
