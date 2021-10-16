@@ -3,21 +3,18 @@ import React, { useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Spinner from '../layout/Spinner';
 import DashboardActions from './DashboardActions';
 import { getCurrentProfile } from '../../actions/profile';
 
 const Dashboard = ({
   getCurrentProfile,
   auth: { user },
-  profile: { profile, loading }
+  profile: { profile }
 }) => {
   useEffect(() => {
     getCurrentProfile();
   }, []);
-  return loading && profile === null ? (
-    <Spinner />
-  ) : (
+  return (
     <Fragment>
       <h1 className='large text-primary'>Dashboard</h1>
       <p className='lead'>
