@@ -1,4 +1,5 @@
 node_modules/
 html/
 config/default.json
+config/production.json
 .vscode/
