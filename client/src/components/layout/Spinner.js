@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react';
-import spinner from './spinner.gif';
 
 const Spinner = () => (
   <Fragment>
-    <img
-      src={spinner}
-      style={{ width: '32px', margin: 'auto', display: 'block' }}
-      alt='Loading...'
-    />
+    <div className='text-center'>
+      <div className='spinner-grow text-warning' role='status'>
+        <span className='sr-only'>Loading...</span>
+      </div>
+    </div>
   </Fragment>
 );
 
