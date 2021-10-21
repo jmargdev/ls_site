@@ -23,8 +23,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     if (password !== password2) {
       setAlert(
         'Passwords entered do not match. Please check the passwords you have entered and try again.',
-        'danger',
-        5000
+        'danger'
       );
     } else {
       register({ name, email, password });
@@ -39,17 +38,16 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     <Fragment>
       <h1 className='large text-primary'>Sign Up</h1>
       <p className='lead'>
-        <i className='fas fa-user'></i> Create Your Account
+        <i className='fas fa-user' /> Create Your Account
       </p>
-      <form className='form' onSubmit={e => onSubmit(e)}>
+      <form className='form' onSubmit={onSubmit}>
         <div className='form-group'>
           <input
             type='text'
             placeholder='Name'
             name='name'
             value={name}
-            onChange={e => onChange(e)}
-            required
+            onChange={onChange}
           />
         </div>
         <div className='form-group'>
@@ -58,13 +56,11 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             placeholder='Email Address'
             name='email'
             value={email}
-            onChange={e => onChange(e)}
+            onChange={onChange}
             autoComplete='username'
-            required
           />
           <small className='form-text'>
-            This site uses Gravatar so if you want a profile image, use a
-            Gravatar email
+            * Profile picture grabbed from Gravatar
           </small>
         </div>
         <div className='form-group'>
@@ -72,9 +68,8 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             type='password'
             placeholder='Password'
             name='password'
-            minLength='6'
             value={password}
-            onChange={e => onChange(e)}
+            onChange={onChange}
             autoComplete='new-password'
           />
         </div>
@@ -83,9 +78,8 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             type='password'
             placeholder='Confirm Password'
             name='password2'
-            minLength='6'
             value={password2}
-            onChange={e => onChange(e)}
+            onChange={onChange}
             autoComplete='new-password'
           />
         </div>
